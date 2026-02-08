@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 
-import { Button } from "./components/ui/button";
+import { Button } from "../components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import ProductHomePage from "./ProductHomePage";
 
@@ -98,10 +98,10 @@ export default function Home() {
             backgroundSize: "cover"
 
 
-          }} className="w-full flex items-center  h-[70vh] bg-pik-500 ">
+          }} className="w-full flex items-center   h-[70vh] bg-pik-500 ">
 
             {/* TEXT-DIV */}
-            <div className="md:w-1/2 w-full h-full flex flex-col items-start gap-5 p-5  bg-green-900/90">
+            <div className="md:w-1/2 w-full h-full flex flex-col items-start md:p-20 gap-5 p-5  bg-green-900/90">
               <p className="text-3xl text-sky-50">Great Taste, Every Time :</p>
 
               <h3 className="text-2xl md:text-4xl text-amber-50 font-bold w-full md:w-8/12">An Exceptional Dining Experience Starts Here
@@ -166,7 +166,7 @@ export default function Home() {
               <div className="mt-24 bg-amber-100 py-1">
                 {itemsDescrebList.map((item, index) => {
                   return (
-                    <div key={index} className={`w-full h-[70vh] px-3 mt-12 md:mt-0 gap-3 md:gap-0  flex  flex-col-reverse  ${item.direction === "row"? "md:flex-row":"md:flex-row-reverse"} `}>
+                    <div key={index} className={`w-full h-[70vh] px-3 mt-12 md:mt-0 gap-3 md:gap-0  flex  flex-col-reverse  ${item.direction === "row" ? "md:flex-row" : "md:flex-row-reverse"} `}>
                       <div className="md:w-1/2 w-full gap-3 md:pl-12 pl-3 flex flex-col items-cente justify-center text-green-900">
                         <h3 className="md:text-4xl text-2xl font-bold ">{index + 1}. {item.name}</h3>
                         <p className="md:text-lg md:w-3/5 w-full"> {item.description}</p>
@@ -198,7 +198,7 @@ export default function Home() {
             <div className="w-24 border-4 border-emerald-800 rounded-full"></div>
             <p className="text-2xl text-emerald-900">Discover our special deals and exclusive discounts crafted just for you!</p>
             <div className="">
-<ProductHomePage/>
+              <ProductHomePage />
             </div>
           </div>
         </section>

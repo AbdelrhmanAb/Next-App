@@ -18,7 +18,7 @@ const menuItems: Item[] = [
     category: "Fast Food",
     description: "Juicy beef patty with melted cheese",
     price: 5.99,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -27,7 +27,7 @@ const menuItems: Item[] = [
     category: "Fast Food",
     description: "Crispy chicken breast with lettuce",
     price: 6.49,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -36,7 +36,7 @@ const menuItems: Item[] = [
     category: "Fast Food",
     description: "Golden crispy potato fries",
     price: 2.99,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -45,7 +45,7 @@ const menuItems: Item[] = [
     category: "Fast Food",
     description: "Classic slice with pepperoni and cheese",
     price: 3.49,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -54,7 +54,7 @@ const menuItems: Item[] = [
     category: "Fast Food",
     description: "Grilled sausage in a bun with toppings",
     price: 4.25,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
 
@@ -65,7 +65,7 @@ const menuItems: Item[] = [
     category: "Desserts",
     description: "Rich and moist chocolate cake",
     price: 4.99,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -74,7 +74,7 @@ const menuItems: Item[] = [
     category: "Desserts",
     description: "Vanilla ice cream with chocolate syrup",
     price: 3.99,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -83,7 +83,7 @@ const menuItems: Item[] = [
     category: "Desserts",
     description: "Classic pie with cinnamon apples",
     price: 3.75,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -92,7 +92,7 @@ const menuItems: Item[] = [
     category: "Desserts",
     description: "Assorted glazed donuts",
     price: 2.5,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -101,7 +101,7 @@ const menuItems: Item[] = [
     category: "Desserts",
     description: "Creamy cheesecake with strawberry topping",
     price: 4.5,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
 
@@ -112,7 +112,7 @@ const menuItems: Item[] = [
     category: "Drinks",
     description: "Refreshing carbonated soft drink",
     price: 1.99,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -121,7 +121,7 @@ const menuItems: Item[] = [
     category: "Drinks",
     description: "Freshly squeezed orange juice",
     price: 2.49,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -130,7 +130,7 @@ const menuItems: Item[] = [
     category: "Drinks",
     description: "Cold brew coffee with ice",
     price: 2.99,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -139,7 +139,7 @@ const menuItems: Item[] = [
     category: "Drinks",
     description: "Creamy vanilla milkshake",
     price: 3.25,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -148,7 +148,7 @@ const menuItems: Item[] = [
     category: "Drinks",
     description: "Hot brewed green tea",
     price: 1.75,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
 
@@ -159,7 +159,7 @@ const menuItems: Item[] = [
     category: "Dinner Plates",
     description: "Salmon fillet with lemon butter sauce",
     price: 12.99,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -168,7 +168,7 @@ const menuItems: Item[] = [
     category: "Dinner Plates",
     description: "Juicy steak with roasted potatoes",
     price: 14.5,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -177,7 +177,7 @@ const menuItems: Item[] = [
     category: "Dinner Plates",
     description: "Pasta with rich meat sauce",
     price: 10.25,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -186,7 +186,7 @@ const menuItems: Item[] = [
     category: "Dinner Plates",
     description: "Spicy chicken curry with rice",
     price: 9.75,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
   {
@@ -195,11 +195,10 @@ const menuItems: Item[] = [
     category: "Dinner Plates",
     description: "Mixed vegetables sautéed in soy sauce",
     price: 8.5,
-    image: "/images/items-images/pngtree-black-forest-gateau-abstract-cake-png-image_12808941.png",
+    image: "/images/items-images/RedDot_Burger.jpg",
     available: true,
   },
 ];
-
 
 export async function GET() {
   return NextResponse.json({
