@@ -200,7 +200,19 @@ const menuItems: Item[] = [
   },
 ];
 
-export async function GET() {
+export async function GET(  request : Request) {
+
+   const {searchParams} = new URL(request.url)
+   const category = searchParams.get("category")
+
+   if (category) {
+    const filtered = menuItems.filter(
+      (item)=> item.category.toLowerCase() === category.toLowerCase()
+    );
+    return NextResponse.json({menuItems:filtered})
+    
+   }
+
   return NextResponse.json({
     menuItems,
   });

@@ -2,7 +2,7 @@ import axios from "axios";
 // import { log } from "console";
 
 
-export const fetchData =async () =>{
+ const fetchData =async () =>{
 try {
      const res = await axios.get("/api/menu")
 
@@ -15,7 +15,33 @@ try {
     
 }
    
+
+}
+
+
+ const getProductByCategory =async (category :string) =>{
+try {
+     const res = await axios.get("/api/menu?category="+category)
+
+    return res.data
+    
+} catch (error) {
+    console.log("fetch errors",error);
+    throw error;
+    
+    
+}
+   
+
+}
+
+
+
+ export {
+    fetchData,
+    getProductByCategory
+
  }
 
- console.log(fetchData);
+//  console.log(fetchData);
  

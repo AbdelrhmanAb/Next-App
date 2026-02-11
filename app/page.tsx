@@ -4,15 +4,9 @@ import Image from "next/image";
 import { Button } from "../components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import ProductHomePage from "./ProductHomePage";
+import Link from "next/link";
 
-
-export default function Home() {
-
-
-
-
-
-  interface Category {
+interface Category {
     name: string,
     description: string,
     image: string
@@ -25,16 +19,22 @@ export default function Home() {
     direction: string
   }
 
+/* 
 
+Fast Food
+5productMenuPage.tsx:51 Desserts
+5productMenuPage.tsx:51 Drinks
+5productMenuPage.tsx:51 Dinner Plates
+*/
 
-  const categoryList: Category[] = [
+ export const categoryList: Category[] = [
     {
-      name: "Appetizers",
+      name: "Fast Food",
       description: "Start your meal with our delicious appetizers, made to awaken your appetite.",
       image: "/images/Ritz-Cracker-Party-Sandwiches_beauty_SEO63_58-7cd3bb86f5464b3aa0304a953dfb65b4.jpg",
     },
     {
-      name: "Main Dishes",
+      name: "Dinner Plates",
       description: "Enjoy our main dishes prepared with fresh ingredients and rich flavors.",
       image: "/images/2548301_QFSHe_646_0_0_0-fbd2a27e126942c8b33dbc3d696b0501.jpg",
     },
@@ -87,6 +87,14 @@ export default function Home() {
   ];
 
 
+export default function Home() {
+
+
+
+
+
+  
+
   return (
     <div className="w-full  ">
       <main>
@@ -124,29 +132,30 @@ export default function Home() {
           <div className="w-full md:h-[50vh]  p-5  bg-amber-100 flex flex-col md:flex-row gap-12 md:gap-0 items-center justify-evenly ">
             {categoryList.map((item, index) => {
               return (
+                // <Link  href={"/menu"+item.name}>
+                  <Link href={"/menu/"+item.name} key={index} className="flex p-3 relative w-10/12 md:w-1/5 md:h-10/12 h-[40vh] bg-green-900 rounded-4xl">
 
-                <div key={index} className="flex p-3 relative w-10/12 md:w-1/5 md:h-10/12 h-[40vh] bg-green-900 rounded-4xl">
-
-                  {/*  image icon */}
-                  <div className=" absolute right-9/12 bottom-8/12">
-                    <div className="w-28 h-28 relative overflow-hidden  bg-green-900  rounded-full">
-                      <Image
-                        src={item.image}
-                        alt="icon"
-                        // width={150}
-                        // height={100}
-                        fill
-                        className=" object-contain  "
-                      />
+                    {/*  image icon */}
+                    <div className=" absolute right-9/12 bottom-8/12">
+                      <div className="w-28 h-28 relative overflow-hidden  bg-green-900  rounded-full">
+                        <Image
+                          src={item.image}
+                          alt="icon"
+                          // width={150}
+                          // height={100}
+                          fill
+                          className=" object-contain  "
+                        />
+                      </div>
                     </div>
-                  </div>
-                  {/*  image icon */}
-                  <div className="ml-18 flex flex-col gap-5">
-                    <h3 className="text-2xl text-amber-50 font-bold">{item.name}</h3>
-                    <p className="text-lg text-amber-50">{item.description}</p>
-                  </div>
+                    {/*  image icon */}
+                    <div className="ml-18 flex flex-col gap-5">
+                      <h3 className="text-2xl text-amber-50 font-bold">{item.name}</h3>
+                      <p className="text-lg text-amber-50">{item.description}</p>
+                    </div>
 
-                </div>
+                  </Link>
+                // </Link>
               )
 
             })}
@@ -209,3 +218,5 @@ export default function Home() {
     </div>
   );
 }
+
+

@@ -1,8 +1,8 @@
 "use client"
 import { useEffect, useState } from "react";
-import { fetchData } from "./_utils/api";
+import { fetchData } from "../_utils/api";
 import Image from "next/image";
-import { Button } from "../components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -10,7 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "../components/ui/dialog"
+} from "@/components/ui/dialog"
 import { MinusIcon, PlusIcon } from "lucide-react";
 
 interface Item {
@@ -29,7 +29,7 @@ interface MenuResponse {
   menuItems: Item[];
 }
 
-const ProductHomePage = () => {
+const ProductMenuPage = () => {
 
   const [items, setItems] = useState<Item[]>([]);
 
@@ -47,12 +47,13 @@ const ProductHomePage = () => {
   return (
     <div className=" grid md:grid-cols-3 grid-cols-1 gap-4 w-full">
       {
-        items.slice(0, 6).map((item) => {
+        items.map((item) => {
+// console.log(item.category);
 
           return (
 
-            <div key={item.id} className=" shadow-lg hover:shadow-2xl transition pb-1.5 rounded-2xl overflow-hidden cursor-pointer flex flex-col gap-3 items-center group ">
-              <div className="h-[16rem] w-[24rem] rounded-2xl relative bg-amber-600">
+            <div key={item.id} className=" shadow p-2 rounded-2xl overflow-hidden cursor-pointer flex flex-col gap-3 items-center ">
+              <div className="h-[20rem] w-[18rem] rounded-2xl relative bg-amber-600">
                 <Image
                   src={`${item.image}`}
                   alt={item.name}
@@ -60,7 +61,7 @@ const ProductHomePage = () => {
                   // height={400}
                   fill
                   loading="lazy"
-                  className=" object-cover group-hover:scale-105 duration-500 transition"
+                  className=""
 
                 />
               </div>
@@ -129,4 +130,4 @@ const ProductHomePage = () => {
   )
 }
 
-export default ProductHomePage
+export default ProductMenuPage
